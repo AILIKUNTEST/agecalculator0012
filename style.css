@@ -1,36 +1,54 @@
-/* Beautiful gradient background with modern styles */
+/* Full-screen Iron Man background with cover */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: url('https://wallpapers.com/images/hd/iron-man-art-4k-rc5n6txuxzsdwy9y.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  backdrop-filter: blur(3px);
 }
 
+/* Frosted glass style container */
 .container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   text-align: center;
   backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 90%;
 }
 
+/* Title and instructions */
+.container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Date input */
 input[type="date"] {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
+/* Button styling */
 button {
-  background-color: #ffffff;
-  color: #333;
+  background-color: #ff3c3c;
+  color: white;
   border: none;
   padding: 12px 25px;
   font-size: 16px;
@@ -40,11 +58,14 @@ button {
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: #e62929;
 }
 
+/* Result output */
 #result {
   margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.6;
 }
